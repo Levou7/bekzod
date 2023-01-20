@@ -1,0 +1,145 @@
+.about-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 60px;
+    &-f{
+        display: flex;
+        align-items: center;
+    }
+    &-s{
+        display: flex;
+        flex-direction: column;
+        .typed-name{
+            background-color: transparent;
+            color: red;
+            font-size: 50px;
+            font-family: sans-serif;
+            font-weight: 500;
+            input{
+                background-color: transparent;
+                color: red;
+                outline: none;
+                border: none;
+            }
+        }
+    }
+    .avatar{
+        position: relative;
+        .before{
+            content: '';
+            border: 3px solid red;
+            width: 50px;
+            height: 50px;
+            border-right: transparent !important;
+            border-bottom: transparent !important;
+            z-index: 10;
+            position: absolute;
+            top: -10px;
+            left: -10px;
+        }
+        .after{
+            content: '';
+            border: 3px solid red;
+            width: 50px;
+            height: 50px;
+            border-left: transparent !important;
+            border-top: transparent !important;
+            z-index: 10;
+            position: absolute;
+            bottom: -10px;
+            right: -10px;
+        }
+    }
+    b{
+        color: red;
+    }
+    p{
+        color: white;
+        font-size: 20px;
+        font-family: sans-serif;
+        font-weight: 400;
+        width: 460px;
+    }
+    h2{
+        color: red;
+        font-size: 50px;
+    }
+    a{
+        font-size: 28px;
+        font-family: sans-serif;
+        font-weight: 300;
+        margin-top: 10px;
+        &:hover{
+            color: white;
+        }
+        i{
+            color: red;
+            margin-right: 10px;
+        }
+    }
+    img{
+        width: 320px;
+        border-radius: 5px;
+    }
+}
+.setting{
+    background-color: black;
+    color: white !important;
+    padding: 15px;
+    border: none;
+    position: relative;
+    bottom: 200px;
+}
+.offcanvas{
+    background-color: #414040;
+    button{
+        font-size: 20px;
+        background-color: white;
+    }
+    h5{
+        color: white;
+        font-size: 40px;
+        font-weight: 400;
+    }
+    a{
+        color: cyan;
+    }
+}
+
+.colors{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 200px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    .color{
+        padding: 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.4s ease all;
+        &:hover{
+            transform: scale(1.1);
+        }
+        &:active{
+            transform: scale(0.9);
+        }
+    }
+    .red{
+        background-color: red;
+    }
+    .green{
+        background-color: green;
+    }
+    .blue{
+        background-color: blue;
+    }
+    .cyan{
+        background-color: cyan;
+    }
+    .white{
+        background-color: white;
+    }
+}

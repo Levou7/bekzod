@@ -1,0 +1,52 @@
+h1{
+    color: white;
+    font-size: 50px;
+}
+.frm{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    input{
+        margin-top: 10px;
+        width: 300px;
+        outline: none;
+        padding: 5px 10px;
+        border: none;
+    }
+    button{
+        padding: 5px 10px;
+        background-color: transparent;
+        color: white;
+        font-size: 20px;
+        font-family: sans-serif;
+        margin-top: 10px;
+    }
+}
+.href{
+    text-decoration: none;
+    position: relative;    
+    bottom: 400px;
+    left: 20px;
+    &:hover{
+        color: white;
+    }
+    i{
+        margin-right: 5px;
+    }
+}
+
+.newAv1{
+    margin-top: 20px;
+    outline: none;
+    padding: 5px 10px;
+    width: 140px;
+    border: 2px dashed red;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+.avatar{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

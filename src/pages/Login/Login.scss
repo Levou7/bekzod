@@ -1,0 +1,16 @@
+.frm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.guest{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    b{
+        color: white;
+        font-size: 20px;
+    }
+}
