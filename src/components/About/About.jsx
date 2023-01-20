@@ -1,7 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect } from 'react'
 import './About.scss'
-import Typed from 'react-typed'
 
 import avatar from '../../assets/img/avatar.jpg'
 import { Link } from 'react-router-dom'
@@ -89,17 +88,8 @@ function About() {
                 <div className="about-head">
                     <div className='about-head-s'>
                         <p>Salom Men</p>
-                        <Typed
-                        className='typed-name'
-                            strings={[
-                            'Bekzaad Ergashev',
-                            'Kompyuter mutahassisi'
-                            ]}
-                            typeSpeed={40}
-                            backSpeed={50}
-                            loop >
-                            <input type="text" />
-                        </Typed>
+                        <b>Bekzad Ergashev</b>
+                        <b>Kompyuter nytahssisi</b>
                         <p>Men Bekzod Ergashev Hozirda Kompyuterlarni tuzatish bilan shugullanaman</p>
                         <label htmlFor="#">
                             <a href="tel:998934252623"><i className="bi bi-telephone"></i>+998 93 425 26 23</a>
