@@ -13,6 +13,8 @@ function About() {
     const {ism2} = useContext(Context)
     const {vaz2} = useContext(Context)
     const {ish2} = useContext(Context)
+
+    const {avatar2} = useContext(Context)
     
     const {tel2} = useContext(Context)
     const {tg2} = useContext(Context)
@@ -24,6 +26,7 @@ function About() {
             console.log(data.avatar)
         })
     }, [])
+    console.log(avatar2);
 
   return (
     <div>
@@ -57,7 +60,7 @@ function About() {
                         </div>
                         <div className='about-head-f'>
                             <label htmlFor="#" className='avatar'>
-                                <img src={avatar} alt="avatar" />
+                                <img src={avatar2} alt="avatar" />
                                 <span style={{border: `3px solid ${color}`}} className='before'></span>
                                 <span style={{border: `3px solid ${color}`}} className='after'></span>
                             </label>
@@ -100,7 +103,7 @@ function About() {
                     </div>
                     <div className='about-head-f'>
                         <label htmlFor="#" className='avatar'>
-                            <img src={avatar} alt="avatar" />
+                            <img src={avatar2} alt="avatar" />
                         </label>
                     </div>
                 </div>

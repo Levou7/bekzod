@@ -19,6 +19,8 @@ function Settings() {
   const {setTel2} = useContext(Context)
   const {setTg2} = useContext(Context)
 
+  const {setAvatar2} = useContext(Context)
+
   const [tel, setTel] = useState('998 93 425 26 23')
   const [tg, setTg] = useState('https://t.me/bekzadergashev')
   
@@ -78,11 +80,11 @@ function Settings() {
                   </form>
               </div>
               <div className='about-head-f'>
-                  <label htmlFor="#" className='avatar'>
+                  <label htmlFor="in" className='avatar'>
                       {
                         image ? <img src={image} alt="avatar" />
                         :
-                        <img src={avatar} alt="avatar" />
+                        <img src={window.localStorage.getItem('avatarImg') ? window.localStorage.getItem('avatarImg') : avatar} alt="avatar" />
                       }
                       <form action="#">
                         <h5 className='newAv1' onClick={()=> document.querySelector('.newAv').click()}>Yangi rasm</h5>
@@ -93,12 +95,13 @@ function Settings() {
                         }
                         const reader = new FileReader()
                         reader.onload = async (event) => {
-                          console.log(event.target.result);
+                          window.localStorage.setItem('avatarImg', event.target.result)
+                          // console.log(event.target.result);
                         }
                         reader.readAsDataURL(files[0])
-                        console.log(files[0]);  
+                        console.log(reader);
                       }}
-                        accept='image/*' type="file" hidden/>
+                        accept='image/*' id='in' type="file" hidden/>
                       </form>
                   </label>
               </div>

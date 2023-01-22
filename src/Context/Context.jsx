@@ -11,6 +11,7 @@ function Provider({children}) {
     const [ish2, setIsh2] = useState('Men Bekzod Ergashev Hozirda Kompyuterlarni tuzatish bilan shugullanaman')
     const [tel2, setTel2] = useState('998 93 425 26 23')
     const [tg2, settg2] = useState('https://t.me/bekzadergashev')
+    const [avatar2, setAvatar2] = useState('998 93 425 26 23')
     console.log(children);
     return (
         <Context.Provider value={{login, setLogin, ism2, setIsm2, vaz2, setVaz2, ish2, setIsh2, tel2, setTel2, tg2, settg2}}>
